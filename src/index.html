@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./public/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My Portfolio</title>
+</head>
+<body class="bg-black lg:overflow-hidde box-border inconsolata">
+    <header class="">
+        <nav class="p-5  w-full h-20 sm:h-28 md:h-20  sm:grid sm:grid-rows-2 sm:justify-center sm:items-center md:flex md:justify-between outline outline-red-500">
+            <div class="flex justify-between sm:justify-center items-center">
+                <figure id="logo" class="w-[180px] h-[39px] ">
+                    <img src="img/Ontalex_.png" alt="">
+                </figure>
+                <div class="text-white mx-2 cursor-pointer sm:hidden">
+                    <i id="icon" class="fa fa-bars fa-2x" aria-hidden="true" onclick="Menu(this)"></i>
+                    <!-- <div class="bar1 w-9 h-1 bg-white my-1.5 mx-0"></div>
+                    <div class="bar2 w-9 h-1 bg-white my-1.5 mx-0"></div>
+                    <div class="bar3 w-9 h-1 bg-white my-1.5 mx-0"></div> -->
+                </div>
+            </div>
+
+            <ul class="sm:flex text-[24x] sm:text-[20px] font-semibold sm:justify-center sm-items-center z-[-1] sm:z-auto  sm:static absolute w-full left-0 sm:w-auto sm:py-0 py-36 sm:opacity-100 sm:h-8 opacity-0 top-[-400px] bg-black transition-all ease-in duration-500 cursor-pointer text-white ">
+                <li class="mx-4 sm:mx-8 my-8 sm:my-0 md:my-0 text-center">
+                    <a class="text-orange-500" href="#">About me</a>
+                </li>
+                <li class="mx-4 sm:mx-8 my-8 sm:my-0 md:my-0 text-center">
+                    <a class="" href="#">Skills</a>
+                </li>
+                <li class="mx-4 sm:mx-8 my-8 sm:my-0 md:my-0 text-center">
+                    <a class="" href="#">Pet-Projects</a>
+                </li>
+                <li class="mx-4 sm:mx-8 my-8 sm:my-0 md:my-0 text-center">
+                    <a class="" href="#">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+</header>
+    <main class="text-white">
+        <div class="block sm:grid sm:grid-rows-2 sm:justify-center sm:items-center md:grid-cols-2">
+            <section class="w-[314px] sm:w-[498px] sm:h-[180px] mt-36 pb-16 mx-auto sm:mx-auto outline outline-cyan-500">
+                <h1 class="font-black text-orange-500 text-[40px] sm:text-[64px] sm:leading-[67px]">Alexey Borisov</h1>
+                <h2 class="font-bold text-[32px] sm:[40px] sm:leading-[42px]">Frontend Developer</h2>
+                <p class="font-normal text-2xl sm:text-xl leading-[25px] sm:leading-[21px]">Frontend developer looking for ideas and projects for himself and others</p>
+            </section>
+
+            <section class="flex items-center justify-center mt-36 mb-24 md:mb-0 h-413px w-full">
+                <div class="text-orange-500 py-[0] md:mt-[72px] opacity-20 bg-no-repeat bg-top bg-[length:full_413px] mx-[18.5px] font-normal text-[12px] md:text-[18px] leading-[13px] md:leading-[19px] absolute outline outline-cyan-500 ">let button_menu = document.querySelector(".header_button");<br>
+                    let float_menu  = document.querySelector(".header_menu--float");<br> 
+                    <br>                 
+                    let line_top   = document.querySelector(".header_button_line--top"); <br>
+                    let line_under = document.querySelector(".header_button_line--bottom"); <br>
+                    <br>                
+                    button_menu.isSelected = false; <br>
+                    <br>
+                    function addEffectWriting(element, time) { <br>
+                      <span class="pl-3">let element_array = element.innerText.split("");</span>  <br>
+                      <br>
+                      <span class="pl-3">element.count     = 0; </span> <br>
+                      <span class="pl-3">element.innerText = ""; </span> <br>
+                      <br>
+                      <span class="pl-3">function writeSymbols() { </span> <br>
+                        <span class="pl-6">element.innerText += element_array[element.count]; </span><br>
+                        <span class="pl-6">element.count++; </span><br>
+                        <br>
+                        <span class="pl-6">if (element.count <= element_array.length) {</span> <br>
+                          <span class="pl-9">setTimeout(() => { </span><br>
+                            <span class="pl-12">writeSymbols(); </span><br>
+                          <span class="pl-9">}, time); </span><br>
+                        <span class="pl-6">} else if (element.count >= element_array.length) { </span><br>
+                          <span class="pl-9">element.count     = 0; </span><br>
+                          <span class="pl-9">element.innerText = ""; </span><br>
+                          <br>                
+                          <span class="pl-9">writeSymbols(); } </span><br>
+                        <span class="pl-6">} </span><br>
+                    <span class="pl-3">} </span><br>
+                      writeSymbols(); <br>
+                    } <br>
+                </div>
+                <div class="flex justify-center items-center  w-[278px] h-[276px] center">
+                    <img class="absolute md:w-[362px] md:h-[360px]" src="img/Rectangle 6.png" alt="">
+                    <img class="absolute pt-[40px] md:w-[373px] md:h-[371px]" src="img/Rectangle 7.png" alt="">
+                    <img class="absolute md:w-[373px] md:h-[371px]" src="img/Rectangle 5.png" alt="">
+                </div>
+            </section> 
+        </div>
+        <!-- about -->
+        <div class="h-[460px] sm:h-[230px] lg:h-[100px] py-36 sm:py-1 w-full sm:grid grid-cols-6 sm:mx-auto justify-center items-center outline outline-yellow-500">
+            <figure class="col-span-1 flex justify-center md:justify-between items-center sm:mx-auto pb-8 sm:pb-0 ">
+                <img class="absolute  w-[72px] h-[72px]" src="img/Rectangle 6.png" alt="">
+                <img class="absolute  w-[72px] h-[72px]" src="img/Rectangle 7.png" alt="">
+            </figure>
+            <div class="col-span-5 sm:flex sm:justify-center sm:items-center w-[322px] sm:w-[500px] h-[200px] sm:h-[100px] font-normal text-2xl leading-[25px] mt-8 sm:mt-0 md:p-0 mx-auto lg:w-[904px] lg:h-[76px]">
+                <p class="">A few years ago, I became interested in developing websites and interfaces. Since then, I have been steadily improving my skills. Now I am developing websites and web applications to order or for myself.</p>
+            </div>
+        </div>
+        <!-- skills -->
+        <div>
+            <div class="w-full h-[572px] sm:h-[810px] md:h-[494px] outline outline-yellow-500 py-16 grid justify-center items-center">
+                <div>
+                    <p class="text-orange-500 text-center font-bold text-[32px] mb-4 leading-[34px]">My Skills</p>
+                </div>
+                <div class="grid h-[364px] sm:h-[616px] md:h-[364px] sm:text-center justify-center sm:grid-rows-2 md:grid-rows-1 md:mx-auto-auto sm:grid-cols-3 md:grid-cols-5 gap-4  outline outline-green-500">
+                    <div class="md:my-auto">
+                        <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto  bg-slate-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
+                            <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:ml-0 sm:mt-[61px]" src="img/Exclude.png" alt="">
+                            <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">HTML5</p>
+                        </div>
+                    </div>
+                    <div class="md:my-auto">
+                        <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto bg-slate-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
+                            <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:ml-0 sm:mt-[61px]" src="img/Exclude (1).png" alt="">
+                            <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">CSS3</p>
+                        </div>
+                    </div>
+                    <div class="md:my-auto">
+                        <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto bg-slate-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
+                            <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:ml-0 sm:mt-[61px]" src="img/Exclude (2).png" alt="">
+                            <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">JavaScript</p>
+                        </div> 
+                    </div>
+                    <div class="md:my-auto">
+                        <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto bg-slate-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
+                            <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:ml-0 sm:mt-[61px]" src="img/Exclude (3).png" alt="">
+                            <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">SCSS</p>
+                        </div>
+                    </div>
+                    <div class="md:my-auto">
+                        <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto bg-slate-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
+                            <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:ml-0 sm:mt-[61px]" src="img/Exclude (4).png" alt="">
+                            <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">Git</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- works -->
+        <section>
+            <div>
+                <p></p>
+            </div>
+
+            <div>
+
+            </div>
+
+
+        </section>
+        <!-- contacts -->
+        <section>
+            <div class="pt-16  w-[339px] h-[170px] mx-auto">
+                <figure class="flex justify-center items-center">
+                    <img src="img/Ontalex_.png" alt="">
+                </figure>
+                <div class="flex justify-center items-center text-xl font-normal leading-[21px] mt-4">
+                    <p>If you liked my work and you need me, I'm ready to talk to you.</p>
+                </div>
+            </div>
+
+            <div class=" text-orange-500 sm:w-[500px] sm:mx-auto outline outline-red-500">
+                <div class="mx-auto mt-16 text-[32px] w-[118px] h-[39px] font-normal leading-[39px]">
+                    <h1>Contacts</h1>
+                </div>
+                <div class="w-[210px] sm:w-[600px] mx-auto mt-5 sm:grid grid-cols-2">
+                    <div class="flex mb-[39px] font-normal leading-[25px]">
+                        <figure class="w-[32px] h-[32px] flex items-center">
+                            <img src="img/Vector.png" alt="">
+                        </figure>
+                        <a class="ml-[19px] text-2xl" href="#">Ontalex@ya.ru</a>
+                    </div>
+                    <div class="flex mb-[39px]">
+                        <figure class="w-[32px] h-[32px] flex items-center">
+                            <img src="img/Vector (1).png" alt="">
+                        </figure>
+                        <a class="ml-[19px] text-2xl" href="#">@ontalex</a>
+                    </div>
+                    <div class="flex mb-[39px]">
+                        <figure class="w-[32px] h-[32px] flex items-center">
+                            <img src="img/Group.png" alt="">
+                        </figure>
+                        <a class="ml-[19px] text-2xl" href="#">Ontalex</a>
+                    </div>
+                    <div class="flex mb-[39px]">
+                        <figure class="w-[32px] h-[32px] flex items-center">
+                            <img src="img/Vector (2).png" alt="">
+                        </figure>
+                        <a class="ml-[19px] text-2xl" href="#">Ontalex</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        function Menu(jamalCodes) {
+            let nav = document.querySelector('ul');
+
+            jamalCodes.class === "fa fa-bars fa-2x" ? (jamalCodes.class = "fa fa-times fa-2x", nav.classList.add('top-[80px]') , nav.classList.add('opacity-100') , nav.classList.add('z-10') ) : (jamalCodes.class = "fa fa-bars fa-2x" , nav.classList.remove('top-[80px]'), nav.classList.remove('opacity-100'), nav.classList.remove('z-10') )
+        }
+        
+    //     const close = document.getElementById('icon');
+    //     function handleClick() {
+    //     close.classList.remove('fa fa-bars fa-2x');
+    //     close.classList.add('fa fa-times fa-2x');
+    // };
+
+    //     close.addEventListener('click' , handleClick);
+
+    //     const open = document.getElementById('icon');
+    //     function handleClick() {
+    //         open.classList.remnove('fa fa-times fa-2x');
+    //         open.classList.add('fa fa-bars fa-2x');
+    //     }
+
+    //     open.addEventListener('click', handleClick);
+
+
+    </script>
+</body>
+</html>
