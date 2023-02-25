@@ -1,7 +1,10 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap'); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-inconsolata {
-    font-family: inconsolata;
-}
+@font-face {
+    font-family: 'roboto';
+    src: url('./font/Inconsolata-Light.ttf');
+    }
