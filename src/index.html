@@ -6,13 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./public/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -20,42 +16,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>My Portfolio</title>
 </head>
-<body class="bg-black box-border font-inconsolata">
+<body class="bg-black box-border text-white" style="font-family: inconsolata, sans-serif;">
     <header class="">
         <nav class="p-5  w-full mt-0 h-20 sm:h-28 md:h-20  sm:grid sm:grid-rows-2 bg-black z-10 sm:justify-center top-0 fixed sm:items-center md:flex md:justify-between">
             <div class="flex justify-between sm:justify-center items-center">
                 <figure id="logo" class="w-[180px] h-[39px] ">
+                    <!-- <p> </J <span>amal</span><span>></span></p> -->
                     <img src="img/Ontalex_.png" alt="">
                 </figure>
-                <div class="text-white mx-2 cursor-pointer sm:hidden">
-                    <i id="icon" class="fa fa-bars fa-2x" aria-hidden="true" onclick="Menu(this)"></i>
-                    <!-- <div class="bar1 w-9 h-1 bg-white my-1.5 mx-0"></div>
-                    <div class="bar2 w-9 h-1 bg-white my-1.5 mx-0"></div>
-                    <div class="bar3 w-9 h-1 bg-white my-1.5 mx-0"></div> -->
+                <div class="mx-2 cursor-pointer sm:hidden">
+                    <i id="icon" class="fa fa-bars fa-2x" aria-hidden="true"></i>
                 </div>
             </div>
 
-            <ul class="sm:flex text-[24x] sm:text-[20px] font-semibold sm:justify-center sm-items-center z-[-1] sm:z-auto  sm:static absolute w-full left-0 sm:w-auto sm:py-0 py-36 sm:opacity-100 sm:h-8 opacity-0 top-[-400px] bg-black transition-all ease-in duration-500 cursor-pointer text-white ">
+            <ul class="sm:flex text-[24x] sm:text-[20px] font-semibold sm:justify-center sm-items-center z-[-1] sm:z-auto  sm:static absolute w-full left-0 sm:w-auto sm:py-0 pt-36 pb-64 sm:opacity-100 h-[883px] sm:h-8 opacity-0 top-[-1000px] bg-black transition-all ease-in duration-500 cursor-pointer">
                 <li class="mx-4 sm:mx-8 my-8 sm:my-0 md:my-0 text-center">
-                    <a class="text-orange-500" href="#about">About me</a>
+                    <a class="text-orange-500 hover:text-orange-200" href="#about">About me</a>
                 </li>
                 <li class="mx-4 sm:mx-8 my-8 sm:my-0 md:my-0 text-center">
-                    <a class="" href="#skills">Skills</a>
+                    <a class="hover:text-zinc-400" href="#skills">Skills</a>
                 </li>
                 <li class="mx-4 sm:mx-8 my-8 sm:my-0 md:my-0 text-center">
-                    <a class="" href="#projects">Pet-Projects</a>
+                    <a class="hover:text-zinc-400" href="#projects">Pet-Projects</a>
                 </li>
                 <li class="mx-4 sm:mx-8 my-8 sm:my-0 md:my-0 text-center">
-                    <a class="" href="#contacts">Contacts</a>
+                    <a class="hover:text-zinc-400" href="#contacts">Contacts</a>
                 </li>
             </ul>
         </nav>
-</header>
-    <main class="text-white">
+    </header>
+    <main class="relative sm:relative">
         <!-- about -->
         <div class="block sm:grid sm:h-[1072px] md:h-[720px] md:my-36 sm:grid-rows-2 sm:justify-center sm:items-center md:grid-cols-2"  arialabelledby="about" id="about">
-            <section class="w-[314px] sm:w-[498px] sm:h-[180px] mt-36 sm:mt-28 md:mt-36 pb-16 mx-auto">
-                <h1 class="font-black text-orange-500 text-[40px] sm:mb-[10px] sm:text-[64px] sm:leading-[67px]">Alexey Borisov</h1>
+            <section class="w-[314px] sm:w-[498px] sm:h-[180px] mt-48 sm:mt-28 md:mt-36 pb-16 mx-auto">
+                <h1 class="font-black text-orange-500 text-[40px] sm:mb-[10px] sm:text-[64px] sm:leading-[67px]">Quadri Jamal</h1>
                 <h2 class="font-bold text-[32px] sm:[40px] sm:mb-[17px] sm:leading-[42px]">Frontend Developer</h2>
                 <p class="font-normal text-2xl sm:text-xl leading-[25px] sm:leading-[21px]">Frontend developer looking for ideas and projects for himself and others</p>
             </section>
@@ -93,10 +87,10 @@
                       writeSymbols(); <br>
                     } <br>
                 </div>
-                <div class="flex justify-center items-center  w-[278px] h-[276px] sm:w-[375px] sm:h-[375px] center" data-aos="zoom-in" data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                <div class="flex justify-center items-center  w-[278px] h-[276px] sm:w-[375px] sm:h-[375px]" data-aos="zoom-in" data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                     <img class="absolute sm:w-[362px] sm:h-[360px]" src="img/Rectangle 6.png" alt="">
-                    <img class="absolute pt-[40px] sm:w-[373px] sm:h-[371px]" src="img/Rectangle 7.png" alt="">
-                    <img class="absolute sm:w-[373px] sm:h-[371px]" src="img/Rectangle 5.png" alt="">
+                    <img class="absolute pt-[70px] sm:w-[373px] sm:h-[371px]" src="img/Rectangle 7.png" alt="">
+                    <!-- <img class="absolute sm:w-[373px] sm:h-[371px]" src="img/Rectangle 5.png" alt=""> -->
                 </div>
             </section> 
         </div>
@@ -107,150 +101,164 @@
                 <img class="absolute  w-[72px] h-[72px]" src="img/Rectangle 7.png" alt="">
             </figure>
             <div class="col-span-5 sm:flex sm:justify-center sm:items-center w-[322px] sm:w-[500px] h-[200px] sm:h-[100px] font-normal text-2xl leading-[25px] mt-8 sm:mt-0 md:p-0 mx-auto lg:w-[904px] lg:h-[76px]">
-                <p class="font-display">A few years ago, I became interested in developing websites and interfaces. Since then, I have been steadily improving my skills. Now I am developing websites and web applications to order or for myself.</p>
+                <p class="font-display">A few months ago, I became interested in developing websites and interfaces. Since then, I have been steadily improving my skills. Now I am developing websites and web applications to order or for myself.</p>
             </div>
         </div>
         <!-- skills -->
         <div arialabelledby="skills" id="skills">
-            <div class="w-full h-[572px] sm:h-[810px] md:h-[494px] py-36 grid justify-center items-center">
+            <div class="w-full h-[572px] sm:h-[810px] mx-auto md:h-[494px] py-36 grid">
                 <div>
                     <p class="text-orange-500 text-center font-bold text-[32px] mb-4 leading-[34px]">My Skills</p>
                 </div>
-                <div class="grid h-[364px] sm:h-[616px] md:h-[364px] sm:text-center justify-center sm:grid-rows-2 md:grid-rows-1 md:mx-auto-auto sm:grid-cls-3 md:grid-cols-5 gap-4" data-aos="zoom-in"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                    <div class="md:my-auto">
-                        <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto  bg-zinc-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
-                            <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:ml-0 sm:mt-[61px]" src="img/Exclude.png" alt="">
-                            <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">HTML5</p>
-                        </div>
-                    </div>
-                    <div class="md:my-auto">
-                        <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto bg-zinc-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
-                            <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:ml-0 sm:mt-[61px]" src="img/Exclude (1).png" alt="">
-                            <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">CSS3</p>
-                        </div>
-                    </div>
-                    <div class="md:my-auto">
-                        <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto bg-zinc-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
-                            <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:ml-0 sm:mt-[61px]" src="img/Exclude (2).png" alt="">
-                            <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">JavaScript</p>
-                        </div> 
-                    </div>
+
+
+<!-- ------------------------------- -->
+
+
+                <div class="grid grid-rows-5 h-[364px] sm:h-[616px] md:h-[364px] sm:text-center justify-center sm:grid-rows-2 md:w-[1064px] md:grid-rows-1 mx-auto md:grid-cols-5 gap-4" data-aos="zoom-in"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+
                     
-                    <div class="md:my-auto sm:pl-[108p] sm:col-start-1 sm:col-end-2 md:col-start-4 md:col-end-5">
-                        <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto bg-zinc-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
-                            <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:ml-0 sm:mt-[61px]" src="img/Exclude (3).png" alt="">
-                            <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">SCSS</p>
+                    <div class="row-span-3 grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 gap-4 sm:w-[632px] sm:m-auto md:col-span-3">    
+                        <div class="md:my-auto">
+                            <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto  bg-zinc-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
+                                <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:mx-auto sm:mt-[61px]" src="img/Exclude.png" alt="">
+                                <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">HTML5</p>
+                            </div>
+                        </div>
+                        <div class="md:my-auto">
+                            <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto bg-zinc-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
+                                <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:mx-auto sm:mt-[61px]" src="img/Exclude (1).png" alt="">
+                                <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">CSS3</p>
+                            </div>
+                        </div>
+                        <div class="md:my-auto">
+                            <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto bg-zinc-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
+                                <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:mx-auto sm:mt-[61px]" src="img/Exclude (2).png" alt="">
+                                <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">JavaScript</p>
+                            </div> 
                         </div>
                     </div>
 
-                    <!-- <div class="hidden sm:block md:hidden sm:w-0 sm:col-start-2 sm:col-end-2"></div> -->
 
-                    <div class="md:my-auto sm:pr-[108p] sm:col-start-3 sm:col-end-4 md:col-start-5 md:col-end-6">
-                        <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto bg-zinc-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
-                            <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:ml-0 sm:mt-[61px]" src="img/Exclude (4).png" alt="">
-                            <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">Git</p>
+                    <!-- ----------------------------------------------------- -->
+
+
+                    <div class="row-span-2 grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 gap-4 sm:w-[416px] sm:m-auto md:col-span-2 md:mt-[32px]"> 
+                        <div class="md:my-auto">
+                            <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto bg-zinc-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
+                                <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:mx-auto sm:mt-[61px]" src="img/Exclude (3).png" alt="">
+                                <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">SCSS</p>
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="md:my-auto">
+                            <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto bg-zinc-900 rounded-md flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
+                                <img class="w-[28px] sm:w-[113px] h-8 sm:h-[128px] ml-9 sm:mx-auto sm:mt-[61px]" src="img/Exclude (4).png" alt="">
+                                <p class="ml-4 sm:ml-0 sm:text-[32px] sm:leading-[37px] sm:font-bold sm:pb-[50px] md:font-normal">Git</p>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div>
         <!-- projects -->
-        <section class="h-[1186px] mt-16" arialabelledby="projects" id="projects">
-            <div class="flex w-[full] h-[34px] items-center justify-center mt-0 text-[32px] font-bold leading-[34px] text-orange-500">
+        <section class="h-[1186px] md:h-[537px] mt-16 sm:mt-44" arialabelledby="projects" id="projects">
+            <div class="flex w-[full] h-[34px] items-center justify-center md:mt-12 text-[32px] font-bold leading-[34px] text-orange-500">
                 <p>My Works</p>
             </div>
 
-            <div class="flex items-center justify-center w-[320px] h-[320px] mt-12 mx-auto" data-aos="flip-left"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                <div class="grid grid-rows-1 h-[500px] bg-no-repeat opacity-5 absolute  bg-top w-full bg-[length:320px_320px] lg:bg-auto lg:h-[820px] 2xl:w-full" style="background-image:url(img/Rectangle-16.png); background-position: center;">
+            <div class="md:grid grid-cols-3 gap-4 md:w-[992px] md:mx-auto">
+                
+                <div class="flex items-center justify-center w-[320px] h-[320px] mt-12 mx-auto" data-aos="flip-left"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                    <div class="grid grid-rows-1 h-[500px] bg-no-repeat opacity-5 absolute  bg-top w-full bg-[length:320px_320px] lg:bg-auto lg:h-[820px] 2xl:w-full" style="background-image:url(img/Rectangle-16.png); background-position: center;">
+                    </div>
+                    <div class="w-[320px] h-[320px] grid grid-cols-1 justify-center opacity-100">
+                        <div class="w-[250px] h-[34px] mx-auto mt-[29px] mb-0 text-[24px] font-bold leading-[34px] text-orange-500">
+                            <p class="text-center">Travel Website</p>
+                        </div>
+                        <div class="flex justify-self-center font-medium my-0 leading-[17px]">
+                            <p>HTML, CSS, JS</p>
+                        </div>
+                        <div class="w-[200px] h-[1px] flex justify-self-center my-0 border-solid bg-orange-900"></div>
+                        <div class="w-[266px] h-[95px] flex justify-self-center my-0 font-normal text-[18px] leading-[17px]">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+
+                        <div id="external" class="z-10 w-[138px] h-[51px] bg-zinc-900 opacity-100 mx-auto mt-0 mb-[29px] rounded-md">
+                            <button type="button" class="m-auto w-[138px] h-[51px] text-[14px]">
+                                <a href="https://www.jamal-travellandingpage.netlify.app" alt="" target="_blank">See more<i class=" ml-[5px] w-[5px] fa fa-long-arrow-right"></i></a>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-[320px] h-[320px] grid grid-cols-1 justify-center opacity-100">
-                    <div class="flex w-[144px] h-[34px] justify-self-center mt-[29px] mb-0 text-[30px] font-medium leading-[34px] text-orange-500">
-                        <p>News Blog</p>
+                <!-- image in the middle  -->
+                <div class="w-[320px] h-[320px] mx-auto md:h-[420x] mt-4 md:mt-12" data-aos="zoom-in"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                    <img src="img/Rectangle-16.png" alt="">
+                </div>
+    
+                <div class="flex items-center justify-center w-[320px] h-[320px] mt-4 md:mt-12 mx-auto" data-aos="flip-right"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                    <div class="grid grid-rows-1 h-[500px] bg-no-repeat opacity-5 absolute  bg-top w-full bg-[length:320px_320px] lg:bg-auto lg:h-[820px] 2xl:w-full" style="background-image:url(img/Rectangle-16.png); background-position: center;">
                     </div>
-                    <div class="flex justify-self-center font-medium my-0 leading-[17px]">
-                        <p>HTML, SCSS, JS</p>
-                    </div>
-                    <div class="w-[200px] h-[1px] flex justify-self-center my-0 border-solid bg-red-900"></div>
-                    <div class="w-[266px] h-[95px] flex justify-self-center my-0 font-normal text-[18px] leading-[17px]">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div class="w-[138px] h-[51px] bg-zinc-900 opacity-100 flex justify-self-center mt-0 mb-[29px]  rounded-md">
-                        <div class="flex text-center items-center">
-                            <p>See more</p>
+                    <div class="w-[320px] h-[320px] grid grid-cols-1 justify-center opacity-100">
+                        <div class="w-[250px] h-[34px] mx-auto mt-[29px] mb-0 text-[24px] font-bold leading-[34px] text-orange-500">
+                            <p class="text-center">Travel Website</p>
+                        </div>
+                        <div class="flex justify-self-center font-medium my-0 leading-[17px]">
+                            <p>HTML, CSS, JS</p>
+                        </div>
+                        <div class="w-[200px] h-[1px] flex justify-self-center my-0 border-solid bg-orange-900"></div>
+                        <div class="w-[266px] h-[95px] flex justify-self-center my-0 font-normal text-[18px] leading-[17px]">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="external" class="z-10 w-[138px] h-[51px] bg-zinc-900 opacity-100 mx-auto mt-0 mb-[29px] rounded-md ">
+                            <button type="button" class="m-auto w-[138px] h-[51px] text-[14px]">
+                                <a href="https://www.jamal-travellandingpage.netlify.app" alt="" target="_blank">See more<i class=" ml-[5px] w-[5px] fa fa-long-arrow-right"></i></a>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="flex justify-center" data-aos="zoom-in"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                <img src="img/Rectangle-16.png" alt="">
-            </div>
-
-            <div class="flex items-center justify-center w-[320px] h-[320px] mt-12 mx-auto" data-aos="flip-right"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                <div class="grid grid-rows-1 h-[500px] bg-no-repeat opacity-5 absolute  bg-top w-full bg-[length:320px_320px] lg:bg-auto lg:h-[820px] 2xl:w-full" style="background-image:url(img/Rectangle-16.png); background-position: center;">
-                </div>
-                <div class="w-[320px] h-[320px] grid grid-cols-1 justify-center opacity-100">
-                    <div class="flex w-[144px] h-[34px] justify-self-center mt-[29px] mb-0 text-[30px] font-medium leading-[34px] text-orange-500">
-                        <p>News Blog</p>
-                    </div>
-                    <div class="flex justify-self-center font-medium my-0 leading-[17px]">
-                        <p>HTML, SCSS, JS</p>
-                    </div>
-                    <div class="w-[200px] h-[1px] flex justify-self-center my-0 border-solid bg-red-900"></div>
-                    <div class="w-[266px] h-[95px] flex justify-self-center my-0 font-normal text-[18px] leading-[17px]">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div class="w-[138px] h-[51px] bg-zinc-900 opacity-100 flex justify-self-center mt-0 mb-[29px]  rounded-md">
-                        <div class="flex justify-center items-center">
-                            <p class="text-center">See more</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-
         </section>
         <!-- contacts -->
         <section class="md:grid grid-cols-5 md:gap-8 md:mx-auto md:justify-items-center justify-center items-center" arialabelledby="contacts" id="contacts">
             <div class="hidden md:flex"></div>
-            <div class="pt-16 md:pt-0  w-[339px] md:w-full h-[170px] md:h-[106px] mx-auto">
-                <figure class="flex justify-center md:justify-start items-center" data-aos="fade-left"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+            <div class="pt-16 md:pt-0  w-[339px] md:w-full h-[170px] md:h-[106px] mx-auto"  data-aos="zoom-in"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                <figure class="flex justify-center md:justify-start items-center">
                     <img src="img/Ontalex_.png" alt="">
                 </figure>
-                <div class="flex justify-center items-center text-xl font-normal leading-[21px] mt-4" data-aos="fade-right"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                <div class="flex justify-center items-center text-xl font-normal leading-[21px] mt-4">
                     <p>If you liked my work and you need me, I'm ready to talk to you.</p>
                 </div>
             </div>
 
-           <div class="md:col-span-2 text-orange-500 sm:w-[500px] md:h-[250px] sm:mx-auto">
+           <div class="md:col-span-2 text-orange-500 sm:w-[500px] md:h-[250px] sm:mx-auto" data-aos="fade-up"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                 <div class="flex mx-auto mt-16 text-[32px] w-[118px] h-[39px] font-extrabold leading-[39px] md:justify-self-start">
-                    <h1 class="limelight">Contacts</h1>
+                    <h1 class="limelight" style="font-family: impact, sans-serif">Contacts</h1>
                 </div>
-                <div class="w-[210px] sm:w-[600px] mx-auto mt-5  text-lg sm:grid grid-cols-2">
+                <div class="w-[250px] sm:w-[600px] mx-auto mt-5  text-lg sm:grid grid-cols-2">
                     <div class="flex mb-[39px] font-normal leading-[25px]">
                         <figure class="w-[32px] h-[32px] flex items-center">
                             <img src="img/Vector.png" alt="">
                         </figure>
-                        <a class="ml-[19px]" href="#">Ontalex@ya.ru</a>
+                        <a class="ml-[19px] hover:text-orange-300" href="https://quadri090@gmail.com" target="_blank">quadri090@gmail.com</a>
                     </div>
                     <div class="flex mb-[39px]">
                         <figure class="w-[32px] h-[32px] flex items-center">
-                            <img src="img/Vector (1).png" alt="">
+                            <i class="fa fa-twitter fa-2x text-orange-100"></i>
                         </figure>
-                        <a class="ml-[19px]" href="#">@ontalex</a>
+                        <a class="ml-[19px] hover:text-orange-300" href="https://twitter.com/qadr_jamal" target="_blank">@qadr_jamal</a>
                     </div>
                     <div class="flex mb-[39px]">
                         <figure class="w-[32px] h-[32px] flex items-center">
                             <img src="img/Group.png" alt="">
                         </figure>
-                        <a class="ml-[19px]" href="#">Ontalex</a>
+                        <a class="ml-[19px] hover:text-orange-300" href="https://github.com/quadri090" target="_blank">@quadri090</a>
                     </div>
                     <div class="flex mb-[39px]">
                         <figure class="w-[32px] h-[32px] flex items-center">
                             <img src="img/Vector (2).png" alt="">
                         </figure>
-                        <a class="ml-[19px]" href="#">Ontalex</a>
+                        <a class="ml-[19px] hover:text-orange-300" href="#">Ontalex</a>
                     </div>
                 </div>
             </div>
@@ -270,10 +278,12 @@
         //     jamalCodes.class === "fa fa-bars fa-2x" ? (jamalCodes.class = "fa fa-times fa-2x", nav.classList.add('top-[80px]') , nav.classList.add('opacity-100') , nav.classList.add('z-10') ) : (jamalCodes.class = "fa fa-bars fa-2x" , nav.classList.remove('top-[80px]'), nav.classList.remove('opacity-100'), nav.classList.remove('z-10') )
         // }
 
-        //this line code makes the navigation section appear. it also toggles the font-awesome menu icon class to a close icon class
         const icon = document.getElementById('icon');
+        // const external = document.getElementById('external');
         const nav = document.querySelector('ul');
+        const main = document.querySelector('main');
 
+        //this line code makes the navigation section appear. it also toggles the font-awesome menu icon class to a close icon class
         icon.addEventListener('click', function() {
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-times');
@@ -281,9 +291,16 @@
             nav.classList.toggle('opacity-100');
             nav.classList.toggle('top-[-400px]');
             nav.classList.toggle('top-[80px]');
+            main.classList.toggle('relative');
+            main.classList.toggle('fixed');
             nav.classList.toggle('z-[-1]');
             nav.classList.toggle('z-10')
         });
+
+        // external.addEventListener(change, function() {
+        //     external.classList.toggle('bg-zinc-900');
+        //     external.classList.toggle('bg-white');
+        // });
 
         
         // This line of code toggles the font awesome close icon class back to menu icon and makes the navigation section disappear on click of the body of ul selector and any element nested within it.
@@ -296,7 +313,13 @@
             nav.classList.toggle('z-[-1]');
             icon.classList.toggle('fa-times');
             icon.classList.toggle('fa-bars');
+            main.classList.toggle('fixed');
+            main.classList.toggle('relative');
         });
+
+        // nav.classList('top-[80px]') ?
+        // main.classList.add('fixed') :
+        // main.classList.remove('relative');
 
     </script>
 </body>
