@@ -18,12 +18,11 @@
 </head>
 <body class="bg-black box-border text-white" style="font-family: inconsolata, sans-serif;">
     <header class="">
-        <nav class="p-5  w-full mt-0 h-20 sm:h-28 md:h-20  sm:grid sm:grid-rows-2 bg-black z-10 sm:justify-center top-0 fixed sm:items-center md:flex md:justify-between">
+        <nav class="p-5  w-full mt-0 h-16 sm:h-28 md:h-20  sm:grid sm:grid-rows-2 bg-black z-20 sm:justify-center top-0 fixed sm:items-center md:flex lg:px-[80px] md:justify-between">
             <div class="flex justify-between sm:justify-center items-center">
-                <figure id="logo" class="w-[180px] h-[39px] ">
-                    <!-- <p> </J <span>amal</span><span>></span></p> -->
-                    <img src="img/Ontalex_.png" alt="">
-                </figure>
+                <div id="logo" class=" h-[39px]">
+                    <p class="text-orange-500 font-semibold sm:font-black text-[28px] sm:text-[36px] leading-[34px]" style="font-family: impact, sans-serif"> &lt;/J<span class="text-white">amal</span><span class="text-orange-500">></span></p>
+                </div>
                 <div class="mx-2 cursor-pointer sm:hidden">
                     <i id="icon" class="fa fa-bars fa-2x" aria-hidden="true"></i>
                 </div>
@@ -45,17 +44,23 @@
             </ul>
         </nav>
     </header>
-    <main class="relative sm:relative">
+    <main class="relative sm:relative scroll-smooth md:scroll-auto">
         <!-- about -->
-        <div class="block sm:grid sm:h-[1072px] md:h-[720px] md:my-36 sm:grid-rows-2 sm:justify-center sm:items-center md:grid-cols-2"  arialabelledby="about" id="about">
-            <section class="w-[314px] sm:w-[498px] sm:h-[180px] mt-48 sm:mt-28 md:mt-36 pb-16 mx-auto">
+        <div class="block sm:grid sm:h-[1072px] md:h-[720px] sm:mt-36 md:my-36 sm:grid-rows-2 sm:justify-center sm:items-center md:grid-cols-2"  arialabelledby="about" id="about">
+            <section class="w-[314px] sm:w-[498px] sm:h-[180px] my-[270px] sm:my-0 sm:mt-16 sm:mb-28 md:mb-0 md:mt-36 pb-16 mx-auto">
                 <h1 class="font-black text-orange-500 text-[40px] sm:mb-[10px] sm:text-[64px] sm:leading-[67px]">Quadri Jamal</h1>
                 <h2 class="font-bold text-[32px] sm:[40px] sm:mb-[17px] sm:leading-[42px]">Frontend Developer</h2>
                 <p class="font-normal text-2xl sm:text-xl leading-[25px] sm:leading-[21px]">Frontend developer looking for ideas and projects for himself and others</p>
+                <nav class="sm:hidden">
+                    <ul class="flex gap-4">
+                        <li class="flex justify-center items-center w-[70px] h-[30px] mt-4 text-[12px] bg-zinc-900 border-[1px] border-orange-500 rounded-md"><a href="#projects" class="">Projects</a></li>
+                        <li class="flex justify-center items-center w-[70px] h-[30px] mt-4 text-[12px] bg-zinc-900 border-[1px] border-orange-500 rounded-md"><a href="#aboutme" class="">About</a></li>
+                    </ul>
+                </nav>
             </section>
 
-            <section class="flex items-center justify-center mt-36 mb-24  sm:mt-36 md:mt-36 md:mb-0 h-413px sm:h-[575px] w-full">
-                <div class="text-orange-500 py-[0] md:mt-[72px] opacity-20 bg-no-repeat bg-top bg-[length:full_413px] mx-[18.5px] font-normal text-[12px] sm:text-[18px] leading-[13px] sm:leading-[19px] absolute">let button_menu = document.querySelector(".header_button");<br>
+            <section class="flex items-center justify-center mb-24  sm:mt-36 md:mb-0 h-300px sm:h-[575px] w-full" arialabelledby="aboutme" id="aboutme">
+                <div class="text-orange-500 py-[0] md:mt-[72px] opacity-20 bg-no-repeat bg-top bg-[length:full_250px] mx-[18.5px] font-normal text-[12px] sm:text-[18px] leading-[13px] sm:leading-[19px] absolute">let button_menu = document.querySelector(".header_button");<br>
                     let float_menu  = document.querySelector(".header_menu--float");<br> 
                     <br>                 
                     let line_top   = document.querySelector(".header_button_line--top"); <br>
@@ -73,51 +78,48 @@
                         <span class="pl-6">element.innerText += element_array[element.count]; </span><br>
                         <span class="pl-6">element.count++; </span><br>
                         <br>
-                        <span class="pl-6">if (element.count <= element_array.length) {</span> <br>
-                          <span class="pl-9">setTimeout(() => { </span><br>
-                            <span class="pl-12">writeSymbols(); </span><br>
-                          <span class="pl-9">}, time); </span><br>
-                        <span class="pl-6">} else if (element.count >= element_array.length) { </span><br>
-                          <span class="pl-9">element.count     = 0; </span><br>
-                          <span class="pl-9">element.innerText = ""; </span><br>
-                          <br>                
-                          <span class="pl-9">writeSymbols(); } </span><br>
-                        <span class="pl-6">} </span><br>
-                    <span class="pl-3">} </span><br>
-                      writeSymbols(); <br>
-                    } <br>
+                        <div class="hidden sm:block">
+
+                            <span class="pl-6">if (element.count <= element_array.length) {</span> <br>
+                              <span class="pl-9">setTimeout(() => { </span><br>
+                                <span class="pl-12">writeSymbols(); </span><br>
+                              <span class="pl-9">}, time); </span><br>
+                            <span class="pl-6">} else if (element.count >= element_array.length) { </span><br>
+                              <span class="pl-9">element.count     = 0; </span><br>
+                              <span class="pl-9">element.innerText = ""; </span><br>
+                              <br>                
+                              <span class="pl-9">writeSymbols(); } </span><br>
+                            <span class="pl-6">} </span><br>
+                        <span class="pl-3">} </span><br>
+                          writeSymbols(); <br>
+                        } <br>
+                        </div>
                 </div>
-                <div class="flex justify-center items-center  w-[278px] h-[276px] sm:w-[375px] sm:h-[375px]" data-aos="zoom-in" data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                    <img class="absolute sm:w-[362px] sm:h-[360px]" src="img/Rectangle 6.png" alt="">
-                    <img class="absolute pt-[70px] sm:w-[373px] sm:h-[371px]" src="img/Rectangle 7.png" alt="">
+                <div class="flex justify-center items-center  w-[278px] h-[278px] sm:w-[375px] sm:h-[375px]" data-aos="zoom-in" data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                    <img class="absolute w-[200px] sm:w-[362px] h-[200px] sm:h-[360px]" src="img/Rectangle 6.png" alt="">
+                    <img class="absolute w-[200px] sm:w-[373px] h-[200px] sm:h-[371px]" src="img/Rectangle 7.png" alt="">
                     <!-- <img class="absolute sm:w-[373px] sm:h-[371px]" src="img/Rectangle 5.png" alt=""> -->
                 </div>
             </section> 
         </div>
         <!-- about -->
-        <div class="h-[460px] sm:h-[230px] lg:h-[100px] py-36 sm:py-0 sm:mt-36 md:mt-0 w-full sm:grid grid-cols-6 sm:mx-auto justify-center items-center">
-            <figure class="col-span-1 flex justify-center md:justify-between items-center sm:mx-auto pb-8 sm:pb-0 ">
+        <div class="h-[300px] sm:h-[230px] lg:h-[100px] sm:mt-36 md:mt-0 w-full sm:grid grid-cols-6 sm:mx-auto justify-center items-center">
+            <figure class="hidden sm:flex col-span-1 justify-center md:justify-between items-center sm:mx-auto pb-8 sm:pb-0 ">
                 <img class="absolute  w-[72px] h-[72px]" src="img/Rectangle 6.png" alt="">
                 <img class="absolute  w-[72px] h-[72px]" src="img/Rectangle 7.png" alt="">
             </figure>
-            <div class="col-span-5 sm:flex sm:justify-center sm:items-center w-[322px] sm:w-[500px] h-[200px] sm:h-[100px] font-normal text-2xl leading-[25px] mt-8 sm:mt-0 md:p-0 mx-auto lg:w-[904px] lg:h-[76px]">
+            <div class="col-span-5 sm:flex sm:justify-center sm:items-center w-[300px] sm:w-[500px] h-[200px] sm:h-[100px] font-normal text-2xl leading-[25px] mx-auto py-8 lg:w-[904px] lg:h-[76px]">
                 <p class="font-display">A few months ago, I became interested in developing websites and interfaces. Since then, I have been steadily improving my skills. Now I am developing websites and web applications to order or for myself.</p>
             </div>
         </div>
         <!-- skills -->
         <div arialabelledby="skills" id="skills">
-            <div class="w-full h-[572px] sm:h-[810px] mx-auto md:h-[494px] py-36 grid">
+            <div class="w-full h-[472px] sm:h-[810px] mx-auto md:h-[494px] sm:mt-12 grid">
                 <div>
-                    <p class="text-orange-500 text-center font-bold text-[32px] mb-4 leading-[34px]">My Skills</p>
+                    <p class="text-orange-500 text-center font-bold text-[32px] pt-12 sm:pb-4 leading-[34px]">My Skills</p>
                 </div>
 
-
-<!-- ------------------------------- -->
-
-
-                <div class="grid grid-rows-5 h-[364px] sm:h-[616px] md:h-[364px] sm:text-center justify-center sm:grid-rows-2 md:w-[1064px] md:grid-rows-1 mx-auto md:grid-cols-5 gap-4" data-aos="zoom-in"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-
-                    
+                <div class="grid grid-rows-5 h-[364px] sm:h-[616px] md:h-[364px] sm:text-center justify-center sm:grid-rows-2 md:w-[1064px] md:grid-rows-1 mx-auto md:grid-cols-5 gap-4" data-aos-once="true" data-aos="zoom-in"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">   
                     <div class="row-span-3 grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 gap-4 sm:w-[632px] sm:m-auto md:col-span-3">    
                         <div class="md:my-auto">
                             <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto  bg-zinc-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
@@ -139,10 +141,6 @@
                         </div>
                     </div>
 
-
-                    <!-- ----------------------------------------------------- -->
-
-
                     <div class="row-span-2 grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 gap-4 sm:w-[416px] sm:m-auto md:col-span-2 md:mt-[32px]"> 
                         <div class="md:my-auto">
                             <div class="w-[285px] sm:w-[200px] h-[60px] sm:h-[300px] mx-auto bg-zinc-900 rounded-md  flex sm:grid sm:grid-rows-2 justify-start sm:justify-center items-center">
@@ -162,97 +160,128 @@
             </div>
         </div>
         <!-- projects -->
-        <section class="h-[1186px] md:h-[537px] mt-16 sm:mt-44" arialabelledby="projects" id="projects">
-            <div class="flex w-[full] h-[34px] items-center justify-center md:mt-12 text-[32px] font-bold leading-[34px] text-orange-500">
+        <section class="h-full lg:h-[537p] mt-32 sm:mt-44" arialabelledby="projects" id="projects">
+            <div class="flex w-[full] h-[34px] items-center justify-center mb-12 md:mt-12 text-[32px] font-bold leading-[34px] text-orange-500">
                 <p>My Works</p>
             </div>
+            <div class="sm:grid sm:grid-cols-2 grid-rows-3 gap-4 lg:gap-6 lg:w-[1100px] mx-auto sm:mx-[30px] lg:mx-auto">
 
-            <div class="md:grid grid-cols-3 gap-4 md:w-[992px] md:mx-auto">
+                <!-- fintekk landing page -->
+                <div class="flex items-center justify-center w-[300px] lg:w-[520px] h-[180px] lg:h-[320px] mt-4  mx-auto " data-aos-once="true" data-aos="flip-left"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <div class="">
+                        <a href="https://jamal-fintekk.netlify.app" target="_blank"><img src="img/fintekk.PNG" class="rounded-2xl shadow-md shadow-orange-500 hover:opacity-40" id="fintekk"></a>
+                        <div class="absolute left-[5%] top-[30%]">
+                            <a href=""><img src="img/Group.png" id="hover" class="hidden"></a>
+                        </div>
+                    
+                        <div class="absolute top-[75%] lg:top-[80%] left-[5%] flex gap-[6px] lg:gap-4 z-10 h-[51px] opacity-100 mx-auto">
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">HTML</div>
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">Tailwind</div>
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">SwiperJS</div>
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">JS</div>
+                        </div>
+                    </div>
+                </div>
                 
-                <div class="flex items-center justify-center w-[320px] h-[320px] mt-12 mx-auto" data-aos="flip-left"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                    <div class="grid grid-rows-1 h-[500px] bg-no-repeat opacity-5 absolute  bg-top w-full bg-[length:320px_320px] lg:bg-auto lg:h-[820px] 2xl:w-full" style="background-image:url(img/Rectangle-16.png); background-position: center;">
-                    </div>
-                    <div class="w-[320px] h-[320px] grid grid-cols-1 justify-center opacity-100">
-                        <div class="w-[250px] h-[34px] mx-auto mt-[29px] mb-0 text-[24px] font-bold leading-[34px] text-orange-500">
-                            <p class="text-center">Travel Website</p>
-                        </div>
-                        <div class="flex justify-self-center font-medium my-0 leading-[17px]">
-                            <p>HTML, CSS, JS</p>
-                        </div>
-                        <div class="w-[200px] h-[1px] flex justify-self-center my-0 border-solid bg-orange-900"></div>
-                        <div class="w-[266px] h-[95px] flex justify-self-center my-0 font-normal text-[18px] leading-[17px]">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
+                <!-- travel website -->
+                <div class="flex items-center justify-center w-[300px] lg:w-[520px] h-[180px] lg:h-[320px] mt-4  mx-auto" data-aos-once="true" data-aos="flip-right"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                    <div class="">
+                        <a href="https://jamal-travellandingpage.netlify.app" target="_blank"><img src="img/travel page.PNG" class="rounded-2xl shadow-md hover:opacity-40 shadow-orange-500"></a>
 
-                        <div id="external" class="z-10 w-[138px] h-[51px] bg-zinc-900 opacity-100 mx-auto mt-0 mb-[29px] rounded-md">
-                            <button type="button" class="m-auto w-[138px] h-[51px] text-[14px]">
-                                <a href="https://www.jamal-travellandingpage.netlify.app" alt="" target="_blank">See more<i class=" ml-[5px] w-[5px] fa fa-long-arrow-right"></i></a>
-                            </button>
+                        <div class="absolute top-[75%] lg:top-[80%] left-[5%] flex gap-[6px] lg:gap-4 z-10 h-[51px] opacity-100 mx-auto">
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">HTML</div>
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">Tailwind</div>
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">JS</div>
                         </div>
                     </div>
                 </div>
-                <!-- image in the middle  -->
-                <div class="w-[320px] h-[320px] mx-auto md:h-[420x] mt-4 md:mt-12" data-aos="zoom-in"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                    <img src="img/Rectangle-16.png" alt="">
+                <!-- twitter log in -->
+                <div class="flex items-center justify-center w-[300px] lg:w-[520px] h-[180px] lg:h-[320px] mt-4  mx-auto" data-aos-once="true" data-aos="flip-left"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                    <div class="">
+                        <a href="https://twitter-login-clonee.netlify.app" target="_blank"><img src="img/twitter.PNG" class="rounded-2xl shadow-md hover:opacity-40 shadow-orange-500"></a>
+
+                        <div class="absolute top-[75%] lg:top-[80%] left-[5%] flex gap-[6px] lg:gap-4 z-10 h-[51px] opacity-100 mx-auto">
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">HTML</div>
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">Tailwind</div>
+                            
+                        </div>
+                    </div>
                 </div>
+                <!-- tailwind landing -->
+                <div class="flex items-center justify-center w-[300px] lg:w-[520px] h-[180px] lg:h-[320px] mt-4  mx-auto" data-aos-once="true" data-aos="flip-right"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                    <div class="">
+                        <a href="https://jamal-tailwind.netlify.app" target="_blank"><img src="img/Tailwind.PNG" class="rounded-2xl shadow-md hover:opacity-40 shadow-orange-500"></a>
+
+                        <div class="absolute top-[75%] lg:top-[80%] left-[5%] flex gap-[6px] lg:gap-4 z-10 h-[51px] opacity-100 mx-auto">
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">HTML</div>
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">CSS</div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- image in the middle -->
+                <div class="flex items-center justify-center w-[300px] lg:w-[520px] h-[180px] lg:h-[320px] mt-4  mx-auto" data-aos-once="true" data-aos="flip-left"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <div class="">
+                        <a href="https://jamal-portfolio.netlify.app" target="_blank"><img src="img/portfolioo.PNG" class="rounded-2xl shadow-md hover:opacity-40 shadow-orange-500"></a>
+
+                        <div class="absolute top-[75%] lg:top-[80%] left-[5%] flex gap-[6px] lg:gap-4 z-10 h-[51px] opacity-100 mx-auto">
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">HTML</div>
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">Tailwind</div>
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">AOS</div>
+                            <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">JS</div>
+                        </div>
+                    </div>
+                </div>
+                    <!-- anydesk interface -->
+                    <div class="flex items-center justify-center w-[300px] lg:w-[520px] h-[180px] lg:h-[320px] mt-4  mx-auto" data-aos-once="true" data-aos="flip-right"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <div class="">
+                            <a href="https://jamal-anydesk.netlify.app" target="_blank"><img src="img/Anydesk.PNG" class="rounded-2xl shadow-md hover:opacity-40 shadow-orange-500"></a>
     
-                <div class="flex items-center justify-center w-[320px] h-[320px] mt-4 md:mt-12 mx-auto" data-aos="flip-right"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                    <div class="grid grid-rows-1 h-[500px] bg-no-repeat opacity-5 absolute  bg-top w-full bg-[length:320px_320px] lg:bg-auto lg:h-[820px] 2xl:w-full" style="background-image:url(img/Rectangle-16.png); background-position: center;">
-                    </div>
-                    <div class="w-[320px] h-[320px] grid grid-cols-1 justify-center opacity-100">
-                        <div class="w-[250px] h-[34px] mx-auto mt-[29px] mb-0 text-[24px] font-bold leading-[34px] text-orange-500">
-                            <p class="text-center">Travel Website</p>
-                        </div>
-                        <div class="flex justify-self-center font-medium my-0 leading-[17px]">
-                            <p>HTML, CSS, JS</p>
-                        </div>
-                        <div class="w-[200px] h-[1px] flex justify-self-center my-0 border-solid bg-orange-900"></div>
-                        <div class="w-[266px] h-[95px] flex justify-self-center my-0 font-normal text-[18px] leading-[17px]">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div id="external" class="z-10 w-[138px] h-[51px] bg-zinc-900 opacity-100 mx-auto mt-0 mb-[29px] rounded-md ">
-                            <button type="button" class="m-auto w-[138px] h-[51px] text-[14px]">
-                                <a href="https://www.jamal-travellandingpage.netlify.app" alt="" target="_blank">See more<i class=" ml-[5px] w-[5px] fa fa-long-arrow-right"></i></a>
-                            </button>
+                            <div class="absolute top-[75%] lg:top-[80%] left-[5%] flex gap-[6px] lg:gap-4 z-10 h-[51px] opacity-100 mx-auto">
+                                <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">HTML</div>
+                                <div class="flex items-center justify-center m-auto w-[40px] lg:w-[60px] h-[20px] lg:h-[31px] text-[8px] lg:text-[12px] font-light bg-zinc-700 border-[1px] lg:border-[2px] border-orange-500 rounded-md">CSS</div>
+                                
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
         </section>
         <!-- contacts -->
-        <section class="md:grid grid-cols-5 md:gap-8 md:mx-auto md:justify-items-center justify-center items-center" arialabelledby="contacts" id="contacts">
+        <section class="lg:grid lg:grid-cols-5 lg:gap-8 lg:mx-auto mt-16 lg:mt-48 md:justify-items-center justify-center items-center" arialabelledby="contacts" id="contacts">
             <div class="hidden md:flex"></div>
-            <div class="pt-16 md:pt-0  w-[339px] md:w-full h-[170px] md:h-[106px] mx-auto"  data-aos="zoom-in"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-                <figure class="flex justify-center md:justify-start items-center">
-                    <img src="img/Ontalex_.png" alt="">
-                </figure>
-                <div class="flex justify-center items-center text-xl font-normal leading-[21px] mt-4">
+            <div class="pt-16 md:pt-0  w-[339px] md:w-full h-[170px] md:h-[106px] mx-auto" data-aos-once="true" data-aos="zoom-in"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                <!-- <figure class="flex justify-center md:justify-start items-center"> -->
+                <div id="logo" class="h-[39px] flex justify-center md:justify-start items-center">
+                    <p class="text-orange-500 font-semibold sm:font-black text-[28px] sm:text-[36px] leading-[34px]" style="font-family: impact, sans-serif"> &lt;/J<span class="text-white">amal</span><span class="text-orange-500">></span></p>
+                </div>
+                <!-- </figure> -->
+                <div class="flex justify-center items-center text-center md:text-left text-xl font-normal leading-[21px] mt-4">
                     <p>If you liked my work and you need me, I'm ready to talk to you.</p>
                 </div>
             </div>
 
-           <div class="md:col-span-2 text-orange-500 sm:w-[500px] md:h-[250px] sm:mx-auto" data-aos="fade-up"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+           <div class="md:col-span-2 text-orange-500 sm:w-[500px] md:h-[250px] sm:mx-auto" data-aos-once="true" data-aos="zoom-in"  data-aos-anchor-placement="center" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                 <div class="flex mx-auto mt-16 text-[32px] w-[118px] h-[39px] font-extrabold leading-[39px] md:justify-self-start">
                     <h1 class="limelight" style="font-family: impact, sans-serif">Contacts</h1>
                 </div>
-                <div class="w-[250px] sm:w-[600px] mx-auto mt-5  text-lg sm:grid grid-cols-2">
+                <div class="w-[250px] sm:w-[600px] mx-auto mt-5  text-lg grid grid-cols-2">
                     <div class="flex mb-[39px] font-normal leading-[25px]">
                         <figure class="w-[32px] h-[32px] flex items-center">
                             <img src="img/Vector.png" alt="">
                         </figure>
-                        <a class="ml-[19px] hover:text-orange-300" href="https://quadri090@gmail.com" target="_blank">quadri090@gmail.com</a>
+                        <a class="ml-[19px] hover:text-orange-300" href="https://quadri090@gmail.com" target="_blank">jamal</a>
                     </div>
                     <div class="flex mb-[39px]">
                         <figure class="w-[32px] h-[32px] flex items-center">
                             <i class="fa fa-twitter fa-2x text-orange-100"></i>
                         </figure>
-                        <a class="ml-[19px] hover:text-orange-300" href="https://twitter.com/qadr_jamal" target="_blank">@qadr_jamal</a>
+                        <a class="ml-[19px] hover:text-orange-300" href="https://twitter.com/qadr_jamal" target="_blank">jamal</a>
                     </div>
                     <div class="flex mb-[39px]">
                         <figure class="w-[32px] h-[32px] flex items-center">
                             <img src="img/Group.png" alt="">
                         </figure>
-                        <a class="ml-[19px] hover:text-orange-300" href="https://github.com/quadri090" target="_blank">@quadri090</a>
+                        <a class="ml-[19px] hover:text-orange-300" href="https://github.com/quadri090" target="_blank">jamal</a>
                     </div>
                     <div class="flex mb-[39px]">
                         <figure class="w-[32px] h-[32px] flex items-center">
@@ -269,17 +298,67 @@
     <footer>
 
     </footer>
-
     <script>
         AOS.init();
-        // function Menu(jamalCodes) {
+    </script>
+    <script>
+        const hover = document.getElementById('hover'); 
+        document.getElementById('fintekk').addEventListener('mouseover', mouseOver);
+        document.getElementById('fintekk').addEventListener('mouseout', mouseOut);
+
+        function mouseOver() {
+            hover.classList.toggle('flex');
+            hover.classList.toggle('hidden');
+            
+        }
+
+
+        function mouseOut() {
+            hover.classList.toggle('flex');
+            hover.classList.toggle('hidden');
+        }
+
+        // function fintekk(){
+        //     window.open("https://jamal-fintekk.netlify.app");
+        // };
+
+        // function fintekkRepo(){
+        //     window.open("https://");
+        // };
+
+        function travel(){
+            window.open("https://jamal-travellandingpage.netlify.app");
+        };
+
+        // function travelRepo(){
+        //     window.open("https://");
+        // };
+
+        function twitter(){
+            window.open("https://twitter-login-clonee.netlify.app");
+        };
+
+        // function twitterRepo(){
+        //     window.open("https://");
+        // };
+
+        function anydesk(){
+            window.open("https://jamal-anydesk.netlify.app");
+        };
+
+        // function anydeskRepo(){
+        //     window.open("https://");
+        // };
+
+        function tailwind(){
+            window.open("https://jamal-tailwind.netlify.app");
+        };
+
+        // function tailwindRepo(){
+        //     window.open("https://");
+        // };
            
-
-        //     jamalCodes.class === "fa fa-bars fa-2x" ? (jamalCodes.class = "fa fa-times fa-2x", nav.classList.add('top-[80px]') , nav.classList.add('opacity-100') , nav.classList.add('z-10') ) : (jamalCodes.class = "fa fa-bars fa-2x" , nav.classList.remove('top-[80px]'), nav.classList.remove('opacity-100'), nav.classList.remove('z-10') )
-        // }
-
         const icon = document.getElementById('icon');
-        // const external = document.getElementById('external');
         const nav = document.querySelector('ul');
         const main = document.querySelector('main');
 
@@ -289,38 +368,40 @@
             icon.classList.toggle('fa-times');
             nav.classList.toggle('opacity-0');
             nav.classList.toggle('opacity-100');
-            nav.classList.toggle('top-[-400px]');
+            nav.classList.toggle('top-[-1000px]');
             nav.classList.toggle('top-[80px]');
-            main.classList.toggle('relative');
-            main.classList.toggle('fixed');
+            // main.classList.toggle('relative');
+            // main.classList.toggle('fixed');
             nav.classList.toggle('z-[-1]');
             nav.classList.toggle('z-10')
         });
-
-        // external.addEventListener(change, function() {
-        //     external.classList.toggle('bg-zinc-900');
-        //     external.classList.toggle('bg-white');
-        // });
-
         
         // This line of code toggles the font awesome close icon class back to menu icon and makes the navigation section disappear on click of the body of ul selector and any element nested within it.
         nav.addEventListener('click', function() {
             nav.classList.toggle('opacity-100');
             nav.classList.toggle('opacity-0');
             nav.classList.toggle('top-[80px]');
-            nav.classList.toggle('top-[-400px]');
+            nav.classList.toggle('top-[-1000px]');
             nav.classList.toggle('z-10')
             nav.classList.toggle('z-[-1]');
             icon.classList.toggle('fa-times');
             icon.classList.toggle('fa-bars');
-            main.classList.toggle('fixed');
-            main.classList.toggle('relative');
+            // main.classList.toggle('fixed');
+            // main.classList.toggle('relative');
         });
 
-        // nav.classList('top-[80px]') ?
-        // main.classList.add('fixed') :
-        // main.classList.remove('relative');
+        // function disableScroll() {
+        //     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        //     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
+        //     window.onscroll =function() {
+        //         window.scrollto(scrollLeft, scrollTop);
+        //     };
+        // };
+
+        // function enableScroll() {
+        //     window.onscroll = function() {};
+        // };
     </script>
 </body>
 </html>
